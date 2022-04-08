@@ -1,7 +1,5 @@
 package ru.job4j.tracker.oop;
 
-import java.sql.SQLOutput;
-
 public class Error {
     private boolean active;
     private int status;
