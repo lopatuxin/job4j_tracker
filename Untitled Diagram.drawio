@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2022-04-15T04:39:24.925Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.75 Safari/537.36 Edg/100.0.1185.39" etag="OM_3D_2foBhKCttR2CEK" version="17.4.4" type="github">
+  <diagram id="iZuGyUjM-qg6Kd5wINJF" name="Page-1">
+    <mxGraphModel dx="782" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-1" value="Item" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="360" y="20" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-2" value="Scanner" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="230" y="300" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xK4WSjQdGqLs2Fdomcl9-3" target="xK4WSjQdGqLs2Fdomcl9-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xK4WSjQdGqLs2Fdomcl9-3" target="xK4WSjQdGqLs2Fdomcl9-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nt31zRqQFQcxnyr9uXIQ-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="xK4WSjQdGqLs2Fdomcl9-3" target="xK4WSjQdGqLs2Fdomcl9-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-3" value="StartUi" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="230" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xK4WSjQdGqLs2Fdomcl9-4" target="xK4WSjQdGqLs2Fdomcl9-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xK4WSjQdGqLs2Fdomcl9-4" value="Tracker" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="360" y="180" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
