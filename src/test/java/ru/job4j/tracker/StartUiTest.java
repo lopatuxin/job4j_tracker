@@ -34,12 +34,12 @@ public class StartUiTest {
 
     @Test
     public void whenDeleteItem() {
-        String[] answers = {"Test"};
+        String[] answers = {"Test", "1"};
         Tracker tracker = new Tracker();
         Input input = new StubInput(answers);
         StartUi.createItem(input, tracker);
         StartUi.deleteItem(input, tracker);
-        Item deleted = tracker.findAll()[0];
+        Item deleted = tracker.findById(1);
         Item expected = null;
         assertThat(deleted, is(expected));
     }
