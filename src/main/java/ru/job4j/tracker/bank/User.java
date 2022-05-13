@@ -2,8 +2,19 @@ package ru.job4j.tracker.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает модель дананых клиента банка
+ * @author Лопатухин Антон
+ * @version 1.0
+ */
 public class User {
+    /**
+     * В переменной хранится номер паспорта
+     */
     private String passport;
+    /**
+     * В переменной хранится имя клиента банка
+     */
     private String userName;
 
     public User(String passport, String userName) {

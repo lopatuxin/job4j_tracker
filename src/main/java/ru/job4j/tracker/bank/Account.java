@@ -2,8 +2,19 @@ package ru.job4j.tracker.bank;
 
 import java.util.Objects;
 
+/**
+ * Класс описывает модель данных счета в банке
+ * @author Лопатухин Антон
+ * @version 1.0
+ */
 public class Account {
+    /**
+     * Реквизиты счета
+     */
     private String requisite;
+    /**
+     * Баланс счета
+     */
     private double balance;
 
     public Account(String requisite, double balance) {
