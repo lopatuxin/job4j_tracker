@@ -7,12 +7,10 @@ public class Departments {
         List<String> rsl = new ArrayList<>();
         Set<String> tmp = new LinkedHashSet<>();
         for (String value : deps) {
-            String start = value.split("/")[0];
-            tmp.add(start);
+            String start = "";
             for (String el : value.split("/")) {
-                if (!el.equals(start)) {
-                    tmp.add(start + "/" + el);
-                }
+                start += "".equals(start) ? el : "/" + el;
+                tmp.add(start);
             }
         }
         rsl.addAll(tmp);
