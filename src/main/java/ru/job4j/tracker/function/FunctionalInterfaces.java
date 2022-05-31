@@ -6,7 +6,7 @@ import java.util.function.*;
 public class FunctionalInterfaces {
     public static void main(String[] args) {
         Map<Integer, String> map = new HashMap<>();
-        BiConsumer<Integer, String> biCon = (s, s1) -> map.put(s, s1);
+        BiConsumer<Integer, String> biCon = map::put;
         biCon.accept(1, "one");
         biCon.accept(2, "two");
         biCon.accept(3, "three");
@@ -24,8 +24,8 @@ public class FunctionalInterfaces {
         Supplier<List<String>> supplier = () -> new ArrayList<>(map.values());
         List<String> strings = supplier.get();
 
-        Consumer<String> consumer = (s) -> System.out.println(s);
-        Function<String, String> function = s -> s.toUpperCase();
+        Consumer<String> consumer = System.out::println;
+        Function<String, String> function = String::toUpperCase;
         for (String s : strings) {
             consumer.accept(function.apply(s));
         }
