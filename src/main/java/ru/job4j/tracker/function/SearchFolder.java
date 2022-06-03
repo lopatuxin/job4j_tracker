@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 public class SearchFolder {
+
     public static List<Folder> filter(List<Folder> list, Predicate<Folder> pred) {
         List<Folder> result = new ArrayList<>();
         for (Folder folder : list) {
