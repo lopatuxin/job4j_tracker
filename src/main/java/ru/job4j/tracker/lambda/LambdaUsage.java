@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class LambdaUsage {
+
     public static void main(String[] args) {
         List<String> strings = Arrays.asList("eeeee", "a",  "ccc", "dddd", "bb");
         Comparator<String> comparator = (left, right) -> {
