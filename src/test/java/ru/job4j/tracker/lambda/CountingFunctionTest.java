@@ -33,8 +33,8 @@ public class CountingFunctionTest {
 
     @Test
     public  void whenIndicativeFunctionThenIndicativeResult() {
-        List<Double> result = CountingFunction.diapason(5, 8, x -> 2 * x);
-        List<Double> expected = Arrays.asList(10D, 12D, 14D);
+        List<Double> result = CountingFunction.diapason(5, 8, x -> Math.pow(2, x));
+        List<Double> expected = Arrays.asList(32D, 64D, 128D);
         assertThat(result, is(expected));
     }
 }
