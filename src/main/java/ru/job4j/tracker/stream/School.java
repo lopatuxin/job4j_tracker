@@ -6,6 +6,8 @@ import java.util.function.Predicate;
 public class School {
 
     public List<Student> collect(List<Student> students, Predicate<Student> predicate) {
-        return students.stream().filter(predicate).toList();
+        return students.stream()
+                .filter(predicate)
+                .toList();
     }
 }
