@@ -2,6 +2,7 @@ package ru.job4j.tracker.stream;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Profiles {
@@ -17,7 +18,7 @@ public class Profiles {
                 .map(Profile::getAddress)
                 .toList()
                 .stream()
-                .sorted()
+                .sorted(Comparator.comparing(Address::getCity))
                 .distinct()
                 .toList();
     }
