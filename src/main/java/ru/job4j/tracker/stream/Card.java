@@ -3,6 +3,7 @@ package ru.job4j.tracker.stream;
 import java.util.stream.Stream;
 
 public class Card {
+
     private Suit suit;
     private Value value;
 
