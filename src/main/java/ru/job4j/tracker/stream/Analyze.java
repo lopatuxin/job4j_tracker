@@ -13,7 +13,7 @@ public class Analyze {
                 .flatMap(pupil -> pupil.getSubjects().stream())
                 .mapToInt(Subject::getScore)
                 .average()
-                .orElse(Double.NaN);
+                .orElse(0);
     }
 
     public static List<Tuple> averageScoreBySubject(Stream<Pupil> stream) {
@@ -22,7 +22,7 @@ public class Analyze {
                         .stream()
                         .mapToInt(Subject::getScore)
                         .average()
-                        .getAsDouble()))
+                        .orElse(0)))
                 .collect(Collectors.toList());
     }
 
@@ -51,7 +51,7 @@ public class Analyze {
 
         return stream
                 .flatMap(pupil -> pupil.getSubjects().stream())
-                .collect(Collectors.groupingBy(Subject::getName, LinkedHashMap::new, Collectors.summingDouble(Subject::getScore)))
+                .collect(Collectors.groupingBy(Subject::getName, Collectors.summingDouble(Subject::getScore)))
                 .entrySet()
                 .stream()
                 .map(tuple -> new Tuple(tuple.getKey(), tuple.getValue()))
